@@ -119,3 +119,17 @@
   p.text span {
     color: greenyellow;
   }
+
+  button {
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button .hover {
+    background-color: #333;
+  }

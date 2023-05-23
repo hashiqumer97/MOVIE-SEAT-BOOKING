@@ -10,12 +10,15 @@
     <h1 style="text-align: center;">Welcome to Ealing Cinema</h1>
     <h2 style="text-align: center;">Login</h2>
     
-    <form action="" method="post">
+    <form id="loginForm" action="MOVIE_HOMEPAGE1.html" method="get">
         <label for="username">Username:</label>
-        <input type="text" name="username" id="username" required><br>
+        <input type="text" name="username" id="username"><br>
         <label for="password">Password:</label>
-        <input type="password" name="password" id="password" required><br>
-        <input type="submit" value="Login" onclick="location.href = 'MOVIE_HOMEPAGE1.HTML'">
+        <input type="password" name="password" id="password" ><br>
+        <button id="loginBtn" disabled>Login</button>
+        <br>
+        <br>
+        <b>If you would like to register, Do email to ealingcinema@gmail.com</b>
     </form>
   
   <script src="LOGIN.js"></script>

@@ -15,9 +15,7 @@ seats.forEach((seat, index) => {
     
     if(document.getElementById("seatno").value == "2"){
       const nextSeatIndex = index + 1;
-    if (nextSeatIndex < seats.length) {
       seats[nextSeatIndex].classList.toggle('selected');
-      }
     }
     if(document.getElementById("seatno").value == "3"){
       const nextSeatIndex = index + 1;
@@ -50,3 +48,7 @@ seats.forEach((seat, index) => {
     total.textContent = `${selectedSeats.length * 10}`;
   });
 });
+
+function home(){
+  window.location.href = "MOVIE_HOMEPAGE1.html";
+}
