@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment - Ealing Cinema</title>
+  <link rel="stylesheet" type="text/css" href="PAYMENT.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Payment</h1>
+    
+    <form id="paymentForm" action="MOVIE_HOMEPAGE1.html" method="get">
+        <label for="cardno">Credit Card Number</label><br>
+        <input type="text" id="cardno" onkeypress="return onlyNumberKey(event)" maxlength="16"><br>
+        <label for ="expirymonth">Expiry Month</label><br>
+        <select id="expirymonthlist">
+            <option value="select">Select Month</option>
+            <option value="1">01</option> 
+            <option value="2">02</option> 
+            <option value="3">03</option>
+            <option value="4">04</option>
+            <option value="5">05</option>
+            <option value="6">06</option>
+            <option value="7">07</option>
+            <option value="8">08</option>
+            <option value="9">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+         </select><br>
+        <label for ="expiryyear">Expiry Year</label><br>
+        <select id="expiryyearlist">
+            <option value="select">Select Year</option>
+            <option value="1">2023</option> 
+            <option value="2">2024</option> 
+            <option value="3">2025</option>
+            <option value="4">2026</option>
+            <option value="5">2027</option>
+            <option value="6">2028</option>
+            <option value="7">2029</option>
+            <option value="8">2030</option>
+            <option value="9">2031</option>
+            <option value="10">2032</option>
+            <option value="11">2033</option>
+            <option value="12">2034</option>
+         </select><br><br>
+        <label for="cvv">CVV</label>
+        <input type="password" id="cvv" onkeypress="return onlyNumberKey(event)" maxlength = "3"><br>
+        <label for="total_lbl">Total:</label>
+        <label style="font-size: 30px; color: yellowgreen;">£</label>
+        <label id="totalpayamt" for="totalpayamt" style="font-size: 30px; color: yellowgreen;"></label>
+        <button id="payBtn" onclick="checkCreditCard()">Pay</button>
+    </form>
+    <form id="cancelForm" action="MOVIE_HOMEPAGE1.html" method="get">
+        <button id="cancelBtn" style="background-color: #333;">Cancel</button>
+    </form>
+  
+  <script src="PAYMENT.js"></script>
+</body>
+</html>
+
+
+
+
