@@ -16,12 +16,16 @@ seats.forEach((seat, index) => {
     if(document.getElementById("seatno").value == "2"){
       const nextSeatIndex = index + 1;
       seats[nextSeatIndex].classList.toggle('selected');
+      document.getElementById("seatno").value = "select";
+      document.getElementById("seatno").disabled = true;
     }
     if(document.getElementById("seatno").value == "3"){
       const nextSeatIndex = index + 1;
       seats[nextSeatIndex].classList.toggle('selected');
       const nextSeatIndex2 = nextSeatIndex + 1;
       seats[nextSeatIndex2].classList.toggle('selected');
+      document.getElementById("seatno").value = "select";
+      document.getElementById("seatno").disabled = true;
     }
     if(document.getElementById("seatno").value == "4"){
       const nextSeatIndex = index + 1;
@@ -30,6 +34,8 @@ seats.forEach((seat, index) => {
       seats[nextSeatIndex2].classList.toggle('selected');
       const nextSeatIndex3 = nextSeatIndex2 + 1;
       seats[nextSeatIndex3].classList.toggle('selected');
+      document.getElementById("seatno").value = "select";
+      document.getElementById("seatno").disabled = true;
     }
     if(document.getElementById("seatno").value == "5"){
       const nextSeatIndex = index + 1;
@@ -40,6 +46,8 @@ seats.forEach((seat, index) => {
       seats[nextSeatIndex3].classList.toggle('selected');
       const nextSeatIndex4 = nextSeatIndex3 + 1;
       seats[nextSeatIndex4].classList.toggle('selected');
+      document.getElementById("seatno").value = "select";
+      document.getElementById("seatno").disabled = true;
     }
  
     // Update status message
